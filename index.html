@@ -1,46 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gatonautas</title>
-  <link rel="icon" type="image/x-icon" href="img/icon_guia.png">
-
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gatonautas - Site interativo da nave Gaton IX">
+    <title>Gatonautas - Nave Gaton IX</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/icon_guia.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <header>
-    <nav class="navbar">
-      <h1>Gatonautas</h1>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a href="index.html">Gatonautas</a>
+                </div>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="equipe.html">Tripulação</a></li>
-        <li><a href="contato.html">Voluntariado</a></li>
-      </ul>
-    </nav>
-  </header>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-  <main>
-    <section class="hero">
-      <h2>Bem-vindo a nave Gaton IX</h2>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="equipe.html" class="nav-link">Tripulação</a></li>
+                    <li><a href="contato.html" class="nav-link">Voluntariado</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-      <p>
-        Salvando planetas abandonados e espalhando ronrons pela galáxia.
-      </p>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2 class="hero-title">Bem-vindo à Nave Gaton IX</h2>
+                <p class="hero-subtitle">Salvando planetas abandonados e espalhando ronrons pela galáxia.</p>
+                
+                <div class="hero-buttons">
+                    <a href="produtos.html" class="btn btn-primary">Explorar Produtos</a>
+                    <a href="contato.html" class="btn btn-secondary">Voluntariado</a>
+                </div>
+            </div>
+            
+            <div class="hero-background">
+                <div class="stars"></div>
+            </div>
+        </section>
 
-      <button>Explorar Missão</button>
-    </section>
-  </main>
+        <section class="highlights">
+            <div class="highlights-container">
+                <div class="highlight-card">
+                    <h3>Produtos Únicos</h3>
+                    <p>Descubra uma coleção exclusiva de produtos temáticos da nave Gaton IX</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>Entrega Rápida</h3>
+                    <p>Envio expresso para toda a galáxia - velocidade de luz garantida!</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>Suporte 24/7</h3>
+                    <p>Nossa equipe está sempre pronta para ajudar sua missão</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2026 Gatonautas (Trabalho Acadêmico) - Todos os direitos reservados.</p>
-  </footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Gatonautas</h4>
+                <p>Somos uma comunidade dedicada à exploração interativa do universo através da Nave Gaton IX. Projeto acadêmico de Programação Web.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="equipe.html">Tripulação</a></li>
+                    <li><a href="contato.html">Voluntariado</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Nos Siga</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>
+                    <a href="mailto:contato@gatonautas.com">contato@gatonautas.com</a>
+                </p>
+                <p>
+                    <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gatonautas (Trabalho Acadêmico) - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-  <script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
