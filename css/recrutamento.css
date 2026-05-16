@@ -1,0 +1,127 @@
+.recruitment-section{
+    padding: 80px 20px;
+    background:
+    linear-gradient(
+        135deg,
+        #0b1020 0%,
+        #14052e 100%
+    );
+}
+
+.recruitment-container{
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    border:
+    1px solid rgba(0,212,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:
+    0 0 30px rgba(0,212,255,0.08);
+}
+
+.recruitment-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.recruitment-subtitle{
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+#volunteerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label,
+.radio-group p{
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border:
+    1px solid rgba(255,255,255,0.15);
+    background:
+    rgba(255,255,255,0.08);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+    border-color: #00d4ff;
+    box-shadow:
+    0 0 10px rgba(0,212,255,0.3);
+}
+
+.input-group textarea{
+    resize: none;
+}
+
+.input-group select{
+    cursor: pointer;
+}
+
+.input-group option{
+    background: #14052e;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dddddd;
+}
+
+#ronrometroValor{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00d4ff;
+    text-align: center;
+}
+
+#feedback{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+@media(max-width: 768px){
+    .recruitment-container{
+        padding: 25px;
+    }
+    .recruitment-title{
+        font-size: 2rem;
+    }
+}
