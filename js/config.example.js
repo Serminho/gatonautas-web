@@ -1,0 +1,3 @@
+const CONFIG = {
+    CAT_API_KEY: "SUA_CHAVE_DA_THE_CAT_API"
+};
