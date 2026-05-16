@@ -103,7 +103,7 @@ header {
     position: relative;
 }
 
-.nav-link::after {
+.nav-link::after, .ativo::after{
     content: '';
     position: absolute;
     width: 0;
@@ -114,11 +114,11 @@ header {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .ativo::after{
     width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover, .ativo{
     color: #00d4ff;
 }
 
