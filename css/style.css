@@ -469,6 +469,7 @@ main {
 .menu-grid {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 25px;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
@@ -857,5 +858,11 @@ body.theme-dark .social-links a:hover {
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+    .menu-card{
+        width: 70vw;
     }
 }

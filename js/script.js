@@ -1,16 +1,10 @@
 ﻿const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
-const menuGrid = document.getElementById("menuGrid");
 
 function toggleHamburgerMenu() {
   if (!hamburger || !navMenu) return;
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-}
-
-function buildMenuGrid() {
-  if (!menuGrid) return;
-  menuGrid.innerHTML = "";
 }
 
 function createInteractiveButton() {
@@ -84,7 +78,6 @@ function initSite() {
     hamburger.addEventListener("click", toggleHamburgerMenu);
   }
 
-//   buildMenuGrid();
   createInteractiveButton();
   createThemeToggleButton();
   enableSmoothScroll();
