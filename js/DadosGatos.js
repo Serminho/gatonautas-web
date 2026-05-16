@@ -22,7 +22,6 @@ if (localStorage.getItem("gatos")) {
   for (gato of gatos) {
     gerarImagens(gato);
   }
-  console.log(gato);
 } else {
   getGatos();
 }
