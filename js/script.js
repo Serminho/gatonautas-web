@@ -2,50 +2,6 @@
 const navMenu = document.getElementById("navMenu");
 const menuGrid = document.getElementById("menuGrid");
 
-const Menu = [
-  {
-    title: "Hambúrguer Clássico",
-    description:
-      "Carne suculenta, queijo derretido e pão dourado para uma experiência tradicional.",
-    image:
-      "Hamburgueres/21-burger-on-a-black-background-for-the-menu-black-and-white-burgers-with-meat-chicken-cutlet.webp",
-  },
-  {
-    title: "Hambúrguer com Batata",
-    description:
-      "Combinação perfeita de hambúrguer e batatas crocantes em um prato saboroso.",
-    image: "Hamburgueres/burger-2612137_640.webp",
-  },
-  {
-    title: "Hambúrguer Caseiro",
-    description:
-      "Sabor artesanal preparado com ingredientes frescos e uma porção generosa de queijo.",
-    image:
-      "Hamburgueres/depositphotos_88670494-stock-photo-close-up-of-home-made.webp",
-  },
-  {
-    title: "Combo Americano",
-    description:
-      "Pão macio, hambúrguer de carne bovina e molho cremoso, acompanhado de batatas fritas crocantes.",
-    image:
-      "Hamburgueres/hamburgueres-de-carne-americana-e-rosquinhas-de-chocolate-no-dia-da-independencia_760618-4246.webp",
-  },
-  {
-    title: "Hambúrguer Explosão",
-    description:
-      "Camadas generosas de queijo e vegetais frescos em um hambúrguer robusto com aroma defumado.",
-    image:
-      "Hamburgueres/pngtree-3d-rendered-burger-with-explosive-presentation-image_3841356.webp",
-  },
-  {
-    title: "Hambúrguer Flamejante",
-    description:
-      "Carne grelhada, queijo picante e cebola caramelizada com um toque de pimenta defumada.",
-    image:
-      "Hamburgueres/pngtree-delicious-flame-burger-spree-background-image_196826.webp",
-  },
-];
-
 function toggleHamburgerMenu() {
   if (!hamburger || !navMenu) return;
   hamburger.classList.toggle("active");
@@ -55,30 +11,6 @@ function toggleHamburgerMenu() {
 function buildMenuGrid() {
   if (!menuGrid) return;
   menuGrid.innerHTML = "";
-
-  Menu.forEach((item) => {
-    const card = document.createElement("article");
-    card.className = "menu-card";
-
-    const img = document.createElement("img");
-    img.src = item.image;
-    img.alt = item.title;
-
-    const content = document.createElement("div");
-    content.className = "menu-card-content";
-
-    const title = document.createElement("h3");
-    title.textContent = item.title;
-
-    const description = document.createElement("p");
-    description.textContent = item.description;
-
-    content.appendChild(title);
-    content.appendChild(description);
-    card.appendChild(img);
-    card.appendChild(content);
-    menuGrid.appendChild(card);
-  });
 }
 
 function createInteractiveButton() {
@@ -120,7 +52,7 @@ function createThemeToggleButton() {
   button.className = "theme-toggle-button";
   button.innerHTML =
     '<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-Sun"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"/><circle cx="12" cy="12" r="4"/></svg>';  
-//   navMenu.appendChild(button);
+  navMenu.appendChild(button);
   if(window.innerWidth < 600){
     document.getElementById("navbar").appendChild(button)
   }
@@ -152,7 +84,7 @@ function initSite() {
     hamburger.addEventListener("click", toggleHamburgerMenu);
   }
 
-  buildMenuGrid();
+//   buildMenuGrid();
   createInteractiveButton();
   createThemeToggleButton();
   enableSmoothScroll();

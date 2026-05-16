@@ -121,7 +121,7 @@ header {
 .nav-link:hover, .ativo{
     color: #00d4ff;
 }
-li{
+#navMenu > li{
     display: flex;
     align-items: center;
     justify-content: center;
