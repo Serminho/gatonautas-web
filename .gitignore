@@ -1,0 +1,7 @@
+# --- Chaves e Configurações Sensíveis ---
+config.js
+
+# --- Pastas do Editor/Sistema Operacional ---
+.vscode/
+.DS_Store
+Thumbs.db
