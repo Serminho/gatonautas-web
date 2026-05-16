@@ -103,7 +103,7 @@ header {
     position: relative;
 }
 
-.nav-link::after {
+.nav-link::after, .ativo::after{
     content: '';
     position: absolute;
     width: 0;
@@ -114,12 +114,17 @@ header {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .ativo::after{
     width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover, .ativo{
     color: #00d4ff;
+}
+#navMenu > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger {
@@ -762,14 +767,10 @@ body.theme-dark .social-links a:hover {
 }
 
 .theme-toggle-button {
-    position: fixed;
-    bottom: 24px;
-    left: 24px;
-    z-index: 9999;
-    padding: 0.85rem 1.2rem;
+    padding: 8px 15px;
     border: none;
     border-radius: 999px;
-    background: rgba(176, 116, 255, 0.95);
+    background: #00d4ff;
     color: #09001b;
     font-weight: 700;
     cursor: pointer;
@@ -780,11 +781,15 @@ body.theme-dark .social-links a:hover {
 
 .theme-toggle-button:hover {
     transform: translateY(-2px) scale(1.02);
-    background: rgba(209, 145, 255, 0.95);
+    color: #ddd;
+    transition: 0.3s all;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar-brand{
+        margin-right: 20vw;
+    }
     .nav-menu {
         position: absolute;
         left: -100%;
