@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Voluntariado Gatonautas - Nave Gaton IX">
     <title>Gatonautas - Voluntariado</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="img/icon_guia.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recrutamento.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -42,6 +45,67 @@
                 </div>
             </div>
         </section>
+        
+        <section class="recruitment-section">
+            <div class="recruitment-container">
+                <h2 class="recruitment-title">Teste de Recrutamento Espacial</h2>
+                <p class="recruitment-subtitle">Descubra se você possui o necessário para integrar a tripulação da Gaton IX.</p>
+                <form id="volunteerForm">
+
+                    <div class="input-group">
+                        <label for="nome">Nome Terrestre</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Canal Holográfico</label>
+                        <input type="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="idade">Idade Galáctica</label>
+                        <input type="number" id="idade" placeholder="Sua idade" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="funcao">Função Desejada</label>
+                        <select id="funcao" required>
+                            <option value="">Escolha uma função</option>
+                            <option value="Piloto Estelar">Piloto Estelar</option>
+                            <option value="Comunicador Terrestre">Comunicador Terrestre</option>
+                            <option value="Engenheiro de Ronrons">Engenheiro de Ronrons</option>
+                            <option value="Explorador Cósmico">Explorador Cósmico</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="ronrometria">Nível de Ronrometria</label>
+                        <input type="range" id="ronrometria" min="0" max="100" value="50" required>
+                        <span id="ronrometroValor">50</span>
+                    </div>
+
+                    <div class="radio-group">
+                        <p>Você teme buracos de minhoca?</p>
+                        <label>
+                            <input type="radio" name="medo" value="sim">Sim
+                        </label>
+                        <label>
+                            <input type="radio" name="medo" value="nao" required>Não
+                        </label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem Espacial</label>
+                        <textarea id="mensagem" rows="5" placeholder="Envie sua mensagem para a Gaton IX"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Recrutamento</button>
+                </form>
+                
+                <div id="feedback"></div>
+            </div>
+        </section>
+
         <section class="highlights">
             <div class="highlights-container">
                 <div class="highlight-card">
