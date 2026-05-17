@@ -1,4 +1,4 @@
-const url = " http://localhost:3000";
+const url = 'https://gatonautas-web.onrender.com/';
 let i = 0;
 
 async function getGatos() {
