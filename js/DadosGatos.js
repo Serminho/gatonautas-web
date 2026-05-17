@@ -5,7 +5,7 @@ async function getGatos() {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error("Erro ao tentar acessar a API");
+      throw new Error("Erro ao tentar acessar a API: " + response.status);
     }
     const gatos = await response.json();
     localStorage.setItem("gatos", JSON.stringify(gatos));
