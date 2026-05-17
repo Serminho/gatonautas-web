@@ -213,3 +213,30 @@
     color: rgba(255,180,180,0.9);
     background: rgba(255,0,0,0.08);
 }
+
+@keyframes hologramaEntrada{
+    from{
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.hologram-message{
+    animation: hologramaEntrada 0.5s ease;
+}
+
+.hologram-rank{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(0,255,255,0.12);
+    border: 1px solid rgba(0,255,255,0.3);
+    color: #7df9ff;
+    font-size: 0.8rem;
+}

@@ -4,13 +4,17 @@ const ronrometroValor = document.getElementById("ronrometroValor");
 const feedback = document.getElementById("feedback");
 const clearButton = document.getElementById("clearHologramas");
 
-function criarHolograma(nome, mensagem){
+function criarHolograma(nome, mensagem, classificacao){
     const hologramBoard = document.getElementById("hologramBoard");
     const hologramMessage = document.createElement("div");
 
     hologramMessage.classList.add("hologram-message");
-    hologramMessage.innerHTML = `<h4>🐱 ${nome}</h4>
-    <p>${mensagem}</p>`;
+
+    hologramMessage.innerHTML =
+    `<h4>🐱 ${nome}</h4>
+    <span class="hologram-rank">${classificacao}</span>
+    <p>${mensagem}</p>`
+    ;
     hologramBoard.prepend(hologramMessage);
 }
 
@@ -21,7 +25,7 @@ function initRecruitmentForm(){
     
     const hologramasSalvos = JSON.parse(localStorage.getItem("hologramas")) || [];
     hologramasSalvos.forEach((holograma) => {
-        criarHolograma(holograma.nome, holograma.mensagem);
+        criarHolograma(holograma.nome, holograma.mensagem, holograma.classificacao);
     });
 
     ronrometria.addEventListener("input", () => {
@@ -61,7 +65,7 @@ function initRecruitmentForm(){
         let classificacao = "";
         let mensagemFinal = "";
         if(nivelRonrometria >= 80 && medo.value === "nao") {
-            classificacao = "🐱 Gato Supremo Intergaláctico";
+            classificacao = "👑 Gato Supremo Intergaláctico";
             mensagemFinal = "Você demonstrou coragem e habilidades extraordinárias.";
         }
         else if(nivelRonrometria >= 50) {
@@ -81,12 +85,18 @@ function initRecruitmentForm(){
         <p>Classificação: <strong>${classificacao}</strong></p>
         <p>${mensagemFinal}</p>`;
         
-        criarHolograma(nome, mensagem);
+        criarHolograma(nome, mensagem, classificacao);
 
         const hologramasSalvos = JSON.parse(localStorage.getItem("hologramas")) || [];
         hologramasSalvos.push({
-            nome, mensagem
+            nome,
+            mensagem,
+            classificacao
         });
+        
+        if(hologramasSalvos.length > 6){
+            hologramasSalvos.shift();
+        }
         localStorage.setItem("hologramas", JSON.stringify(hologramasSalvos));
         
         volunteerForm.reset();
