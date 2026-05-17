@@ -1,4 +1,4 @@
-const url = `https://api.thecatapi.com/v1/images/search?limit=10&api_key=${CONFIG.CAT_API_KEY}`;
+const url = 'https://gatonautas-web.onrender.com/';
 let i = 0;
 
 async function getGatos() {

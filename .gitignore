@@ -5,3 +5,6 @@ config.js
 .vscode/
 .DS_Store
 Thumbs.db
+
+.env
+node_modules/
