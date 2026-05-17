@@ -240,3 +240,38 @@
     color: #7df9ff;
     font-size: 0.8rem;
 }
+
+.mission-navigation{
+    padding: 70px 20px;
+}
+
+.mission-navigation-container{
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(0,212,255,0.15);
+    box-shadow:
+    0 0 30px rgba(0,212,255,0.08);
+}
+
+.mission-navigation-container h3{
+    color: #00d4ff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.mission-navigation-container p{
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.mission-navigation-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
