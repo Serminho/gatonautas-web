@@ -1,0 +1,25 @@
+{
+  "name": "gatonautas-web",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico de Programação Web - Site interativo da nave Gaton IX com HTML, CSS, JavaScript e consumo de APIs públicas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorbite/gatonautas-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorbite/gatonautas-web/issues"
+  },
+  "homepage": "https://github.com/vitorbite/gatonautas-web#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
