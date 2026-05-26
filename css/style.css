@@ -1050,6 +1050,6 @@ body.theme-dark .social-links a:hover {
     grid-template-columns: 1fr;
   }
   .menu-card {
-    width: 70vw;
+    width: 90vw;
   }
 }

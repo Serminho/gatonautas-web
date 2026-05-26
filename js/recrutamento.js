@@ -64,17 +64,17 @@ function initRecruitmentForm(){
         const nivelRonrometria = Number(ronrometria.value);
         let classificacao = "";
         let mensagemFinal = "";
-        if(nivelRonrometria >= 80 && medo.value === "nao") {
-            classificacao = "👑 Gato Supremo Intergaláctico";
-            mensagemFinal = "Você demonstrou coragem e habilidades extraordinárias.";
+        if(nivelRonrometria >= 80 && medo.value === "sim") {
+            classificacao = "🌟 Tutor Supremo da Galáxia";
+            mensagemFinal = "Seu perfil demonstra grande compatibilidade com os gatonautas resgatados.";
         }
         else if(nivelRonrometria >= 50) {
-            classificacao = "🚀 Explorador Espacial";
-            mensagemFinal = "Você possui potencial para integrar a missão.";
+            classificacao = "🚀 Aliado da Missão Gatonauta";
+            mensagemFinal = "A tripulação acredita que você pode ajudar muitos felinos espaciais.";
         }
         else{
-            classificacao = "🛠️ Estagiário de Ronrons";
-            mensagemFinal = "A tripulação recomenda treinamento adicional.";
+            classificacao = "🛰️ Recruta em Treinamento";
+            mensagemFinal = "Continue acompanhando nossas missões e prepare sua base espacial.";
         }
         
         feedback.style.display = "block";
