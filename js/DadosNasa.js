@@ -1,7 +1,7 @@
 const planetas = [
   {
     id: "mercury",
-    nome: "Mercúrio",
+    nome: "Centro",
     tipo: "Sistema Solar",
     visitado: true,
     dataVisita: "2026-03-12",
@@ -9,11 +9,11 @@ const planetas = [
     descricaoGeral:
       "O primeiro planeta do sistema. Os gatos astronautas estabeleceram colônias subterrâneas para fugir do calor extremo.",
     descricao:
-      "Instalação de mega-espelhos orbitais paraD refletir a luz solar e resfriar a superfície, criando zonas temperadas para os felinos.",
+      "Exploração de cavernas para achar exploradores espaciais perdidos em um mundo quente.",
   },
   {
     id: "jupiter",
-    nome: "Júpiter",
+    nome: "Bairro Noivos",
     tipo: "Sistema Solar",
     visitado: false,
     dataVisita: null,
@@ -21,11 +21,11 @@ const planetas = [
     descricaoGeral:
       "As tempestades de Júpiter ainda são violentas demais para os trajes espaciais felinos. Sondas orbitais planejam a extração de gases leves.",
     descricao:
-      "Planejado: Construção de cidades flutuantes na alta atmosfera para minerar hélio e criar centros de gravidade artificial.",
+      "Planejado: Construção de cidades flutuantes na alta atmosfera e criar centros de gravidade artificial com caixas e ração.",
   },
   {
     id: "venus",
-    nome: "Vênus",
+    nome: "Casa abandonada",
     tipo: "Sistema Solar",
     visitado: true,
     dataVisita: "2026-04-01",
@@ -33,11 +33,11 @@ const planetas = [
     descricaoGeral:
       "Um mundo infernal de ácido e calor. Os cientistas felinos desenvolveram trajes especiais de teflon para explorar seus céus.",
     descricao:
-      "Introdução de algas geneticamente modificadas na alta atmosfera para consumir o gás carbônico e reduzir o efeito estufa.",
+      "Acolhimento de novos recrutas espaciais largados no espaço",
   },
   {
     id: "HD 189733b",
-    nome: "HD 189733b",
+    nome: "Morada do Sol",
     tipo: "Exoplaneta",
     visitado: false,
     dataVisita: null,
@@ -45,11 +45,11 @@ const planetas = [
     descricaoGeral:
       "Um planeta hostil onde chove vidro lateralmente. Classificado como zona de extremo perigo para qualquer cauda felina.",
     descricao:
-      "Planejado: Bombardeamento atmosférico com partículas neutralizadoras para derreter o silício suspenso antes que ele atinja a superfície.",
+      "Planejado: Resgate de gatonautas e criação de zonas de proteção à chuva de vidro.",
   },
   {
     id: "saturn",
-    nome: "Saturno",
+    nome: "Pista de corrida",
     tipo: "Sistema Solar",
     visitado: false,
     dataVisita: null,
@@ -57,11 +57,11 @@ const planetas = [
     descricaoGeral:
       "O planeta dos anéis impressiona os felinos. A gravidade dos anéis de gelo está sendo estudada para criar pistas de corrida gravitacionais.",
     descricao:
-      "Planejado: Ancoragem de estações espaciais nos anéis externos para captação de água pura congelada.",
+      "Planejado: Ancoragem de estações espaciais nos anéis externos para apoio de felinos.",
   },
   {
     id: "Kepler-22b",
-    nome: "Kepler-22b",
+    nome: "Parque aquático",
     tipo: "Exoplaneta",
     visitado: true,
     dataVisita: "2026-02-18",
@@ -70,7 +70,7 @@ const planetas = [
       "Um mundo massivo e oceânico orbitando uma estrela parecida com o Sol. Um verdadeiro paraíso para pescadores espaciais.",
 
     descricao:
-      "Construção de plataformas flutuantes bio-sustentáveis e introdução de fauna marinha compatível para alimentação da frota.",
+      "Resgate de astronautas vítimas de naufrágio.",
   },
 ];
 
