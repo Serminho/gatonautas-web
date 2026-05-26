@@ -38,81 +38,84 @@
         <section class="hero" id="voluntariado">
             <div class="hero-content">
                 <h2 class="hero-title">Voluntariado Gatonautas</h2>
-                <p class="hero-subtitle">Junte-se à missão de ajudar planetas abandonados com ações sociais e ambientais.</p>
+                <p class="hero-subtitle">Participe das missões de resgate felino da Gaton IX como voluntário, tutor ou apoiador.</p>
             </div>
         </section>
         
         <section class="recruitment-section">
             <div class="recruitment-container">
-                <h2 class="recruitment-title">Teste de Recrutamento Espacial</h2>
-                <p class="recruitment-subtitle">Descubra se você possui o necessário para integrar a tripulação da Gaton IX.</p>
+                <h2 class="recruitment-title">Centro de Adoção Interestelar</h2>
+                <p class="recruitment-subtitle">
+                    A nave Gaton IX resgata felinos abandonados por toda a galáxia.
+                    Preencha seu cadastro para se tornar um tutor espacial ou participar da missão como voluntário.
+                </p>
                 <form id="volunteerForm">
 
                     <div class="input-group">
-                        <label for="nome">Nome Terrestre</label>
+                        <label for="nome">Nome do Tutor Espacial</label>
                         <input type="text" id="nome" placeholder="Digite seu nome">
                     </div>
 
                     <div class="input-group">
-                        <label for="email">Canal Holográfico</label>
+                        <label for="email">Canal de Comunicação</label>
                         <input type="email" id="email" placeholder="Digite seu email">
                     </div>
 
                     <div class="input-group">
-                        <label for="idade">Idade Galáctica</label>
+                        <label for="idade">Idade Terrestre</label>
                         <input type="number" id="idade" placeholder="Sua idade">
                     </div>
 
                     <div class="input-group">
-                        <label for="funcao">Função Desejada</label>
+                        <label for="funcao">Como deseja ajudar?</label>
                         <select id="funcao">
-                            <option value="">Escolha uma função</option>
-                            <option value="Piloto Estelar">Piloto Estelar</option>
-                            <option value="Comunicador Terrestre">Comunicador Terrestre</option>
-                            <option value="Engenheiro de Ronrons">Engenheiro de Ronrons</option>
-                            <option value="Explorador Cósmico">Explorador Cósmico</option>
+                            <option value="">Escolha uma opção</option>
+                            <option value="Adocao">Quero adotar um gatonauta</option>
+                            <option value="Lar Temporario">Posso oferecer lar temporário</option>
+                            <option value="Voluntario">Quero ser voluntário da missão</option>
+                            <option value="Doador">Quero apoiar com doações</option>
                         </select>
                     </div>
 
                     <div class="input-group">
-                        <label for="ronrometria">Nível de Ronrometria</label>
+                        <label for="ronrometria">Compatibilidade de Ronrometria</label>
                         <input type="range" id="ronrometria" min="0" max="100" value="50" required>
                         <span id="ronrometroValor">50</span>
                     </div>
 
                     <div class="radio-group">
-                        <p>Você teme buracos de minhoca?</p>
+                        <p>Você possui espaço seguro para um gato astronauta?</p>
                         <label>
                             <input type="radio" name="medo" value="sim">Sim
                         </label>
                         <label>
-                            <input type="radio" name="medo" value="nao">Não
+                            <input type="radio" name="medo" value="nao">Ainda estou preparando minha base espacial
                         </label>
                     </div>
-                    
+
                     <div class="input-group">
-                        <label for="mensagem">Mensagem Espacial</label>
-                        <textarea id="mensagem" rows="5" placeholder="Envie sua mensagem para a Gaton IX"></textarea>
+                        <label for="mensagem">Mensagem para a Tripulação</label>
+                        <textarea id="mensagem" rows="5" placeholder="Conte por que você gostaria de participar da missão"></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary">Enviar Recrutamento</button>
+
+                    <button type="submit" class="btn btn-primary">Enviar Cadastro Espacial</button>
                 </form>
-                
+
                 <div id="feedback"></div>
-                
+
                 <div class="hologram-section">
-                    <h3 class="hologram-title">Sala de Controle Holográfica</h3>
-                    <p class="hologram-subtitle">Mensagens recebidas pela nave Gaton IX</p>
+                    <h3 class="hologram-title">Painel de Mensagens da Nave</h3>
+                    <p class="hologram-subtitle">Últimos sinais recebidos pela central Gatonauta</p>
                     <div class="hologram-board" id="hologramBoard"></div>
-                    <button id="clearHologramas" class="clear-hologram-btn">Limpar hologramas</button>
+                    <button id="clearHologramas" class="clear-hologram-btn">Limpar painel</button>
                 </div>
             </div>
-        </section>    
+        </section>
         
                 <section class="mission-navigation">
                     <div class="mission-navigation-container">
                         <h3>Continue Explorando a Galáxia</h3>
-                        <p>Sua mensagem foi enviada para a Gaton IX. Continue acompanhando nossas aventuras espaciais.</p>
+                        <p>Sua mensagem foi enviada para a Gaton IX. Continue acompanhando nossas missões de resgate e adoção pela galáxia.</p>
                         <div class="mission-navigation-buttons">
                             <a href="index.html" class="btn btn-secondary">Voltar ao Início</a>
                             <a href="galeria.html" class="btn btn-primary">Veja a Nossa Galeria</a>
@@ -125,11 +128,11 @@
             <div class="highlights-container">
                 <div class="highlight-card">
                     <h3>Como Participar</h3>
-                    <p>Envie uma mensagem e receba orientações sobre as próximas ações voluntárias da tripulação.</p>
+                    <p>Cadastre-se para participar de missões de resgate, adoção e apoio aos gatinhos acolhidos.</p>
                 </div>    
                 <div class="highlight-card">
                     <h3>Projetos Atuais</h3>
-                    <p>Campanhas de limpeza espacial, doação de suprimentos e apoio a comunidades galácticas.</p>
+                    <p>Realizamos campanhas de adoção, arrecadação de ração e cuidados veterinários para gatos resgatados.</p>
                 </div>    
                 <div class="highlight-card">
                     <h3>Contato Direto</h3>
@@ -142,7 +145,7 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h4>Sobre Gatonautas</h4>
-                <p>Somos a equipe da Nave Gaton IX, levando curiosidade e diversão para toda a galáxia.</p>
+                <p>Somos uma ONG fictícia dedicada ao resgate, cuidado e adoção responsável de gatos, utilizando uma temática espacial para representar nossas missões.</p>
             </div>
             <div class="footer-section">
                 <h4>Links Rápidos</h4>
